@@ -1,0 +1,161 @@
+*{
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body,html{
+	min-height:100%;
+	width:100%;
+}
+body{background:url('../img/fondo1.jpg') top;}
+/*
+	Formulario
+*/
+.wrap_form{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:400px;
+	padding:20px;
+	background:rgba(27, 38, 49,.7);/*#24323D  #fff*/
+	border:1px solid #333;
+	border-radius:3px;
+	font-family:"Titillium Web";
+}
+.wrap_accion a{
+	display:block;
+	text-decoration:none;
+	float:left;
+	width:50%;
+	padding:12px;
+	font-family:16px;
+	color:#009999;/*#00e6e6;*/
+	background:#fff;
+	margin-bottom:20px;
+	text-align:center;
+	cursor:pointer;
+	border:1px solid transparent;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.wrap_accion .accion{
+	background:#009999;
+	color:#fff;
+	cursor:default;
+}
+.wrap_accion a:not(.accion):hover{
+	-webkit-box-shadow:0 0 5px 0 #fff;
+	box-shadow:0 0 5px 0 #fff;
+}
+h2{
+	margin-top:20px;
+	color:#00b3b3;
+	text-align:center;
+}
+/* Inputs & Labels*/
+form{
+	width:100%;
+}
+.wrap_box{
+	overflow:hidden;
+	width:100%;
+}
+.box,.box_doble{
+	position:relative;
+	width:100%;
+}
+.box_doble{
+	width:50%;
+	float:left;
+}
+.box .bien-label,.box .bien-input,.box_doble .bien-label,.box_doble .bien-input{
+	font-size:15px;
+	display:block;
+	padding:8px;
+	cursor:text;
+	color:#fff;
+}
+.box .bien-label,.box_doble .bien-label{
+	position:relative;
+	top:38px;
+}
+.box .bien-label span,.box_doble .bien-label span{
+	color:#009999;
+}
+.box .bien-input,.box_doble .bien-input{
+	width:100%;
+	color:#00b3b3;
+	background:transparent;
+	border:1px solid #fff;
+	background:rgba(255,255,255,.1);
+}.box_doble:first-child .bien-input{border-right:none;}
+
+.box .mal-input,.box_doble .mal-input{color:red;border-color:red;}
+.box .mal-label,.box_doble .mal-label{color:#fff;}
+.box .mal-label span,.box_doble .mal-label span{color:red;}
+
+form > input{
+	width:100%;
+	margin-top:38px;
+	padding:10px;
+	font-family:"Titillium Web";
+	font-size:18px;
+	color:#fff;
+	background:#009999;
+	border:none;
+	cursor:pointer;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+form > input:hover{
+	background:#00b3b3;
+}
+.wrap_opciones{overflow:hidden;}
+.volver{
+	display:block;
+	font-size:16px;
+	margin-top:10px;
+	border-bottom:1px solid #fff;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+} .volver:hover{
+	border-bottom:1px solid #009999;
+} .volver:first-child{
+	float:left;
+	width:80px;
+} .volver:last-child{
+	float:right;
+	width:115px;
+}
+/* SPINNER */
+.fa-spin{
+	color:#009999;
+	display:none;
+	float:left;
+	margin-top:12px;
+	margin-left:20px;
+	font-size:23px;
+}
+@media screen and (max-width:500px){
+	.wrap_form{
+		width:100%;
+		position:relative;
+		top:0;
+		left:0;
+		transform:none;
+	}
+	.box_doble{
+		width:100%;
+		float:none;
+	}
+	.box_doble:first-child .bien-input{border-right:1px solid #fff;}
+}

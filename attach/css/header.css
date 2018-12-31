@@ -1,0 +1,190 @@
+/************/
+/* Cabecera */
+/************/
+header nav{
+	float:right;
+	padding:10px;
+}
+header nav ul{
+	list-style:none;
+}
+header nav ul li, .li-config li a{
+	text-decoration:none;
+	float:left;
+	padding:8px 15px;
+	color:#666;
+	cursor:pointer;
+	position:relative;
+}
+header nav ul li{
+	padding:8px 8px;
+}
+header nav ul .m-h{
+	border-right:1px solid #999;
+	padding-right:18px;
+	margin-right:10px;
+}
+header nav ul .m-h a{
+	color:#666;
+	text-decoration:none;
+}
+header nav ul .m-u{
+	padding:0;
+	margin-left:10px;
+}
+header nav ul .m-u a{
+	padding:8px 15px;
+	text-decoration:none;
+	display:block;
+	color:#00b3b3;
+}
+header nav ul .m-c{
+	background:#009999;
+	padding:10px 10px 6px 10px;
+	color:#fff;
+	position:relative;
+}
+header nav ul .m-c i{
+	font-size:20px;
+}
+.flecha{
+	position:absolute;
+	border:10px solid transparent;
+	border-bottom-color:#fff;
+	bottom:-15px;
+	z-index:20;
+	display:none;
+}
+header nav ul li i{
+	display:block;
+	font-size:15px;
+}
+.li-config{
+	display:none;
+	background:#fff;
+	-webkit-box-shadow: 0 0 5px 1px #999;
+	box-shadow: 0 0 5px 1px #999;
+	position:absolute;
+	min-width:180px;
+	top:55px;
+	right:0;
+	z-index:10;
+	padding:10px;
+}
+.li-config li{
+	float:none;
+	padding:0;
+}
+.li-config li i{
+	margin-right:15px;
+}
+.li-config li a{
+	float:none;
+	display:block;
+	padding:0;
+	padding-top:10px;
+}
+.li-config li a:hover{
+	color:#00B3B3;
+}
+.li-config li:first-child{
+	padding:0 0 10px 0;
+	border-bottom:1px solid #ccc;
+	cursor:not-allowed;
+}
+.editar-user{
+	border-bottom:1px solid #ccc;
+}
+.li-config .editar-user a{
+	padding-bottom:10px;
+}
+.editar-user a i{
+	font-size:18px;
+	width:20px;
+}
+h1{
+	float:left;
+	margin-right:30px;
+	padding-top:5px;
+	font-size:40px;
+	color:#00B3B3;
+	font-family: 'Righteous', cursive;
+}
+.ti2{
+	color:#737373;
+}
+.form-buscar{
+	display:block;
+	float:left;
+	overflow:hidden;
+	padding-top:12px;
+	width:300px;
+}
+.form-buscar input{
+	border:none;
+	border:1px solid #009999;
+	width:calc(100% - 35px);
+	color:#666;
+	float:left;
+	padding:5px 8px;
+	font-size:16px;
+	font-family:'Titillium web';
+}
+.form-buscar button,.form-buscar button i{
+	display:block;
+	border:none;
+	outline:none;
+}
+.form-buscar button{
+	color:#009999;
+	font-size:14px;
+	padding:10px;
+	border:1px solid #009999;
+	border-left:none;
+}
+/*****************/
+/* Pie de pagina */
+/*****************/
+footer{
+	padding:50px 0 10px 0;
+}
+footer p{
+	text-align:center;
+	color:#4d4d4d;
+}
+footer p a{
+	color:#00b3b3;
+	text-decoration:none;
+}
+.fa-user{
+	display:block;
+	font-size:200px;
+	color:#009999;
+	text-align:center;
+}
+.com-txt{
+	margin-top:20px;
+	color:#4d4d4d;
+	text-align:center;
+}
+footer ul{
+	overflow:hidden;
+	width:187px;
+	margin:0 auto;
+	margin-top:2px;
+}
+footer ul li{
+	list-style:none;
+	float:left;
+	border-right:1px solid #4d4d4d;
+}
+footer ul li:last-child{
+	border-right:none;
+}
+footer ul li a{
+	text-decoration:none;
+	padding:0 20px;
+	color:#009999;
+	display:block;
+	text-decoration:none;
+}

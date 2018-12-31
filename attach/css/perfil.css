@@ -1,0 +1,247 @@
+*{
+	padding:0;
+	margin:0;
+	-webkit-transition: all .7s ease;
+	-o-transition: all .7s ease;
+	transition: all .2s ease;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,body{
+	height:100%;
+	width:100%;
+	background:url("../img/sand.jpg") #f2f2f2;
+	font-family:"Titillium Web", arial, sans-serif;
+	font-weight:lighter;
+}
+/************/
+/* Cabecera */
+/************/
+.margen-general{
+	width:1100px;
+	margin:0 auto;
+}
+.header-fondo{
+	height:60px;
+	background:rgba(255,255,255,1);
+}
+header{
+	height:250px;
+	background:url("../img/fondo1.jpg") center;
+	-webkit-box-shadow: 0 0 5px 1px #b3b3b3;
+	box-shadow: 0 0 5px 1px #b3b3b3;
+}
+/*************/
+/* CONTENIDO */
+/*************/
+.contenido{
+	width:1000px;
+	margin:0 auto;
+	padding-top:50px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.info-contacto{
+	width:calc(30% - 5px);
+	margin-right:10px;
+}
+.info-contacto h3{
+	color:#099;
+}
+.info-contacto h3:first-child{
+	margin-top:0;
+}
+.info-grupo{
+	border-bottom:1px solid #ccc;
+	padding:15px 15px;
+}
+.info-grupo:last-child{
+	border-bottom:none;
+}
+.info-contacto p{
+	padding-left:10px;
+	color:#4d4d4d;
+}
+.publicaciones{
+	width:calc(70% - 5px);
+}
+.publicacion{
+	width:100%;
+	padding:10px;
+	margin-bottom:10px;
+}
+.publicacion:last-child{
+	margin-bottom:0;
+}
+.publi-info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding-bottom:10px;
+}
+.publi-info img{
+	display:block;
+	margin-right:10px;
+	width:50px;
+	border-radius:50%;
+}
+.publi-info-per{
+	width:calc(100% - 60px);
+}
+.publi-info-per span{
+	display:block;
+}
+.publi-info-per-user-n a{
+	text-decoration:none;
+	color:#009999;
+	font-size:18px;
+}
+.publi-info-per-user-fecha{
+	font-size:14px;
+	color:#666;
+}
+
+.publi-contenido{
+	border-bottom:1px solid #e6e6e6;
+	border-top:1px solid #e6e6e6;
+	padding:15px 20px;
+}
+.publi-contenido p{
+	line-height:20px;
+	color:#595959;
+	font-size:16px;
+	margin-bottom:10px;
+}
+.publi-contenido p:last-child{
+	margin-bottom:0;
+}
+.publi-contenido b{
+	color:#009999;
+	font-weight:lighter;
+}
+
+
+.publi-opciones{
+	padding:5px 0;
+	border-bottom:1px solid #e6e6e6;
+}
+.publi-opciones-btn{
+	display:inline-block;
+	padding:5px 30px;
+	border-radius:5px;
+	color:#009999;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+
+.publi-comentarios{
+	display:none;
+}
+.redactar-comentario{
+	padding:10px 0;
+}
+.redactar-comentario form textarea{
+	width:calc(100% - 45px);
+	resize:vertical;
+	background:#f2f2f2;
+	outline:none;
+	border:none;
+	color:#666;
+	
+	font-family:"Titillium web";
+	font-size:15px;
+	padding:10px;
+	border-radius:5px;
+	border:1px solid #c4c4ba;
+	overflow-y:hidden;
+}
+.redactar-comentario form button{
+	border:none;
+	color:#fff;
+	background:#099;
+	font-size:20px;
+	width:35px;
+	height:35px;
+	border-radius:50%;
+	cursor:pointer;
+}
+.comentario{
+	padding:10px;
+	background:#f2f2f2;
+	border:1px solid #d9d9d9;
+	border-top:none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.publi-comentarios > div:nth-child(2){
+	border-top:1px solid #d9d9d9;
+}
+.comentario-per{
+	width:205px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.comentario-per img{
+	width:45px;
+	height:45px;
+	margin-right:10px;
+	display:block;
+	border-radius:50%;
+}
+.comentario-per-user{
+	width:150px;
+}
+.comentario-per-user-nombre a{
+	text-decoration:none;
+	color:#009999;
+}
+.comentario-per-user-fecha{
+	font-size:13px;
+	color:#666;
+}
+.comentario-txt{
+	width:calc(100% - 205px);
+}
+.comentario-txt p{
+	color:#666;
+	font-weight:lighter;
+	font-size:15px;
+	line-height:20px;
+	margin-bottom:10px;
+}
+.comentario-txt p:last-child{
+	margin-bottom:0;
+}
